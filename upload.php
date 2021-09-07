@@ -3,7 +3,7 @@
 <html>
 
 <head>
-<title>Uploaded</title>
+<title>Anabasii - Uploaded</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
     {
         if($fileError === 0)
         {
-            if($fileSize < 1000000)
+            if($fileSize < 100000000)
             {
                 $fileNameNew = uniqid('', true).".".$fileActualExt;
                 $fileDestination = 'uploads/'.$fileNameNew;
