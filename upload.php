@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Uploaded</title>
+</head>
+
+<body>
+<h1>Anabasii</h1>
+<h2>Copy this link and send it to your friends!</h2>
+<p>
 <?php
 if (isset($_POST['submit'])) {
     $file = $_FILES['file'];
@@ -22,7 +34,7 @@ if (isset($_POST['submit'])) {
                 $fileNameNew = uniqid('', true).".".$fileActualExt;
                 $fileDestination = 'uploads/'.$fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
-                header("Location: index.php?uploadsuccess");
+                echo "http://118.92.111.230/".$fileDestination;
             }
             else
             {
@@ -40,3 +52,7 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
+</p>
+</body>
+
+</html>
