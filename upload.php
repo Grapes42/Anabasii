@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
                 $fileNameNew = uniqid('', true).".".$fileActualExt;
                 $fileDestination = 'uploads/'.$fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
-                echo "http://118.92.111.230/".$fileDestination;
+                echo "http://anabasii.ddns.net/".$fileDestination;
             }
             else
             {
