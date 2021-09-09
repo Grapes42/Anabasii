@@ -4,10 +4,15 @@
 
 <head>
 <title>Anabasii - Uploaded</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+<center>
+<div class="titleclass">
 <h1>Anabasii</h1>
+<h3>Simple large file sharer</h3>
+</div>
 <h2>Copy this link and send it to your friends!</h2>
 <p>
 <?php
@@ -25,11 +30,11 @@ if (isset($_POST['submit'])) {
 
     $allowed = array('jpg', 'jpeg', 'png', 'pdf', 'txt', 'mp4', 'gif');
 
-    if(in_array($fileActualExt, $allowed))
-    {
+    //if(in_array($fileActualExt, $allowed))
+    //{
         if($fileError === 0)
         {
-            if($fileSize < 100000000)
+            if($fileSize < 1000*1000*1000) // 1GB
             {
                 $fileNameNew = uniqid('', true).".".$fileActualExt;
                 $fileDestination = 'uploads/'.$fileNameNew;
@@ -45,14 +50,15 @@ if (isset($_POST['submit'])) {
         {
             echo "There was an error uploading your file";
         }
-    }
-    else
-    {
-        echo "File type not allowed";
-    }
+    //}
+    //else
+    //{
+    //    echo "File type not allowed";
+    //}
 }
 ?>
 </p>
+</center>
 </body>
 
 </html>
