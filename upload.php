@@ -7,13 +7,18 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 
+<header>
+<a href="index.php">Home</a> |
+<a href="https://github.com/Grapes42/Anabasii">Github Repo</a>
+</header>
+
 <body>
 <center>
 <div class="titleclass">
 <h1>Anabasii</h1>
-<h3>Simple large file sharer</h3>
+<h2>Simple large file sharer</h2>
 </div>
-<h2>Copy this link and send it to your friends!</h2>
+<h3>Copy this link and send it to your friends!</h3>
 <p>
 <?php
 if (isset($_POST['submit'])) {
