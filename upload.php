@@ -4,12 +4,14 @@
 
 <head>
 <title>Anabasii - Uploaded</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" type="text/css" href="styles.css?version=51">
 </head>
 
 <header>
+<h5>
 <a href="index.php">Home</a> |
 <a href="https://github.com/Grapes42/Anabasii">Github Repo</a>
+</h5>
 </header>
 
 <body>
