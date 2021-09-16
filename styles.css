@@ -65,3 +65,7 @@ a:visited {
 .bodyclass {
 	width: 550px;
 }
+
+.linkclass {
+	background-color: #233b57;
+}

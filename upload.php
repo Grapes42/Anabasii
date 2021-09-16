@@ -16,7 +16,8 @@
 
 			<h5>
 			<a href="index.php">Home</a> |
-			<a href="https://github.com/Grapes42/Anabasii">Github Repo</a>
+			<a href="https://github.com/Grapes42/Anabasii">Github Repo</a> |
+			<a href="definition.html">Anabasii Definition</a>
 			</h5>
 
 		</header>
@@ -34,9 +35,11 @@
 
 			<div class="bodyclass">
 
+				<hr>
+				
 				<h3>Copy this link and send it to your friends!</h3>
 
-				<p>
+				<p class="linkclass">
 
 					<?php
 
@@ -78,6 +81,11 @@
 					?>
 
 				</p>
+
+				
+				<p>This link may last anywhere from a couple of weeks to a couple of months depending on how much use the server receives</p>
+
+				<hr>
 
 			</div>
 

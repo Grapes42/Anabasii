@@ -17,7 +17,8 @@
 
 			<h5>
 			<a href="index.php">Home</a> |
-			<a href="https://github.com/Grapes42/Anabasii">Github Repo</a>
+			<a href="https://github.com/Grapes42/Anabasii">Github Repo</a> |
+			<a href="definition.html">Anabasii Definition</a>
 			</h5>
 
 		</header>
