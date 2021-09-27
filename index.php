@@ -8,6 +8,12 @@
 		<title>Anabasii - Upload File</title>
 		<link rel="stylesheet" type="text/css" href="styles.css?version=51">
 
+		<meta content="Anabasii" property="og:title" />
+		<meta content="Simple large file sharer. Ignore Discord's tiny 8mb limit" property="og:description" />
+		<meta content="http://anabasii.ddns.net" property="og:url" />
+		<meta content="http://anabasii.ddns.net/images/foldericon.png" property="og:image" />
+		<meta content="#000c22" data-react-helmet="true" name="theme-color" />	
+
 	</head>
 	
 
