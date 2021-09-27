@@ -36,6 +36,11 @@ p {
 	font-size: 14px;
 }
 
+ul {
+ 	color: #c9c9c9;
+        font-size: 14px;
+}
+
 body {
 	background-color:#000c22;
 }
