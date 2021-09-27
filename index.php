@@ -56,6 +56,21 @@
 				<p><span title="What does Anabasii mean?"><a href="definition.html">Anabasii</a></span> is an opensource (<span title="Github Repository"><a href="https://github.com/Grapes42/Anabasii">Github</a><span>), free to use file sharer hosted on a little raspberry pi.</p>	
 				<p>It allows you to share any videos or other files without the small limits most communication programs provide.</p>
 
+				<hr>
+
+				<h3>Why use Anabasii?</h3>
+				
+				<ul>
+
+					<li>It's free!</li>
+					<li>Accountless use meaning no need to make an account or sign up.</li>
+					<li>No small file size limits.</li>
+					<li>It's open source, which means if you wanted to you could host your own server.</li>
+
+				</ul>
+
+				<hr>
+
 			</div>
 
 		</center>
