@@ -7,6 +7,8 @@
 		<meta charset="utf-8">
 		<title>Anabasii - Upload File</title>
 		<link rel="stylesheet" type="text/css" href="styles.css?version=51">
+		<link rel="icon" type="image/png" href="images/foldericon.png">
+
 
 		<meta content="Anabasii" property="og:title" />
 		<meta content="Simple large file sharer. Ignore Discord's tiny 8mb limit" property="og:description" />
