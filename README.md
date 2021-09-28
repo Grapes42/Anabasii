@@ -1,5 +1,6 @@
 # Anabassi
 ### Simple large file sharer
+[![CodeFactor](https://www.codefactor.io/repository/github/grapes42/anabasii/badge)](https://www.codefactor.io/repository/github/grapes42/anabasii)
 
 ## Table of contents
 - [Description](#description)
