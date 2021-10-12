@@ -5,6 +5,7 @@
 ## Table of contents
 - [Description](#description)
 - [Usage](#usage)
+- [Setup](#setup)
 - [Disclaimer](#disclaimer)
 - [Support](#support)
 - [Authors and acknowledgements](#authors-and-acknowledgements)
@@ -30,6 +31,25 @@ Here is a list of step by step instructions to use the program:
 4. Copy the link and paste it into chat so they can click it.
 
 Done! Your link will last anywhere from a couple of weeks to a couple of months. This depends how much use the website receives.
+
+## Setup
+
+#### Incase you want to host your own
+
+Setup instructions for Raspbian or other Debian distros.
+```
+$ sudo su -
+$ apt get update && apt get upgrade
+$ apt install apache2 
+$ apt install php7.3 php7.3-fpm && a2enmod proxy_fcgi setenvif
+$ git clone https://github.com/Grapes42/Anabasii.git /var/www/html
+$ chmod -R 777 /var/www/html/uploads
+$ cp /var/www/html/setupFiles/000-default.conf /etc/apache2/sites-available/000-default.conf
+$ cp /var/www/html/setupFiles/startup.sh /etc/init.d/startup.sh
+$ cp /var/www/html/setupFiles/php.ini /etc/php/7.3/fpm/php.ini
+$ reboot
+```
+Then port forward your server and get a domain name.
 
 ## Disclaimer
 
