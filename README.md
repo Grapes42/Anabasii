@@ -39,7 +39,7 @@ Done! Your link will last anywhere from a couple of weeks to a couple of months.
 Setup instructions for Raspbian or other Debian distros.
 ```
 $ sudo su -
-$ apt get update && apt get upgrade
+$ apt update && apt upgrade
 $ apt install apache2 
 $ apt install php7.3 php7.3-fpm && a2enmod proxy_fcgi setenvif
 $ git clone https://github.com/Grapes42/Anabasii.git /var/www/html
