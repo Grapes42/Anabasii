@@ -40,9 +40,9 @@ Setup instructions for Raspbian or other Debian distros.
 ```
 $ sudo su -
 $ apt update && apt upgrade
-$ apt install apache2 
+$ apt install git apache2
 $ apt install php7.3 php7.3-fpm && a2enmod proxy_fcgi setenvif
-$ git clone https://github.com/Grapes42/Anabasii.git /var/www/html
+$ rm -rf /var/www/html/* && git clone https://github.com/Grapes42/Anabasii.git /var/www/html
 $ chmod -R 777 /var/www/html/uploads
 $ cp /var/www/html/setupFiles/000-default.conf /etc/apache2/sites-available/000-default.conf
 $ cp /var/www/html/setupFiles/startup.sh /etc/init.d/startup.sh
