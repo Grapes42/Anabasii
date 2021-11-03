@@ -36,7 +36,7 @@ Done! Your link will last anywhere from a couple of weeks to a couple of months.
 
 #### Incase you want to host your own
 
-Setup instructions for Raspbian or other Debian distros.
+Setup instructions for Raspbian or other Debian distros (I'm planning on supporting Arch in the future!)
 ```
 sudo su -
 apt install git && git clone https://github.com/Grapes42/Anabasii.git ~/
@@ -57,7 +57,11 @@ $ sudo update-rc.d anabasii-startup.sh defaults
 $ reboot
 ```
 
-Then port forward your server and get a domain name.
+Then port forward your server and get a domain. If you are new/don't know what portforwarding is [this](https://www.youtube.com/watch?v=CLunOJZqmc0) video may be helpful.
+
+Getting a domain can be done via services like [Google Domains](https://domains.google/). Or if you don't have money like me, use something like [No-IP](https://www.noip.com/).
+
+If at any point you need to grab your public ip this command works nicely ```curl ifconfig.me```
 
 ## Disclaimer
 
@@ -79,6 +83,6 @@ Authors:
 Acknowlegements:
 - Stackoverflow
 - Google
-- [Masterbond7 (the README bloke)](https://github.com/Masterbond7)
-- [Dani Krossing (PHP Upload Code)](https://www.youtube.com/channel/UCzyuZJ8zZ-Lhfnz41DG5qLw)
-- [Tony Teaches Tech (Apache and PHP setup)](https://www.youtube.com/channel/UCWPJwoVXJhv0-ucr3pUs1dA)
+- [Masterbond7 (I took inspiration from his README)](https://github.com/Masterbond7)
+- [Dani Krossing (How I learnt PHP Upload Code)](https://www.youtube.com/channel/UCzyuZJ8zZ-Lhfnz41DG5qLw)
+- [Tony Teaches Tech (How I learnt Apache and PHP setup)](https://www.youtube.com/channel/UCWPJwoVXJhv0-ucr3pUs1dA)
