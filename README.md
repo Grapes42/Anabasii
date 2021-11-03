@@ -38,6 +38,12 @@ Done! Your link will last anywhere from a couple of weeks to a couple of months.
 
 Setup instructions for Raspbian or other Debian distros.
 ```
+sudo su -
+apt install git && git clone https://github.com/Grapes42/Anabasii.git ~/
+~/Anabasii/anabasii-setup.sh
+```
+or
+```
 $ sudo su -
 $ apt update && apt upgrade
 $ apt install git apache2
@@ -45,10 +51,12 @@ $ apt install php7.3 php7.3-fpm && a2enmod proxy_fcgi setenvif
 $ rm -rf /var/www/html/* && git clone https://github.com/Grapes42/Anabasii.git /var/www/html
 $ chmod -R 777 /var/www/html/uploads
 $ cp /var/www/html/setupFiles/000-default.conf /etc/apache2/sites-available/000-default.conf
-$ cp /var/www/html/setupFiles/startup.sh /etc/init.d/startup.sh
 $ cp /var/www/html/setupFiles/php.ini /etc/php/7.3/fpm/php.ini
+$ cp /var/www/html/setupFiles/anabasii-startup.sh /etc/init.d/anabasii-startup.sh
+$ sudo update-rc.d anabasii-startup.sh defaults
 $ reboot
 ```
+
 Then port forward your server and get a domain name.
 
 ## Disclaimer
