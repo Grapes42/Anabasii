@@ -1,0 +1,10 @@
+[Unit]
+Description=Starts Anabasii clean script
+[Service]
+Type=Simple
+Restart=always
+RestartSec=60
+User=root
+ExecStart=/var/www/html/clean.sh
+[Install]
+WantedBy=multi-user.target
