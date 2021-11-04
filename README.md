@@ -37,6 +37,8 @@ Done! Your link will last anywhere from a couple of weeks to a couple of months.
 #### Incase you want to host your own
 
 Setup instructions for Raspbian or other Debian distros (I'm planning on supporting Arch in the future!)
+
+[Setup and SSH](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html) into your server, and run:
 ```
 sudo su -
 apt install git && git clone https://github.com/Grapes42/Anabasii.git ~/
@@ -53,11 +55,11 @@ $ chmod -R 777 /var/www/html/uploads
 $ cp /var/www/html/setupFiles/000-default.conf /etc/apache2/sites-available/000-default.conf
 $ cp /var/www/html/setupFiles/php.ini /etc/php/7.3/fpm/php.ini
 $ cp /var/www/html/setupFiles/anabasii-startup.sh /etc/init.d/anabasii-startup.sh
-$ sudo update-rc.d anabasii-startup.sh defaults
+$ update-rc.d anabasii-startup.sh defaults
 $ reboot
 ```
 
-Then port forward your server and get a domain. If you are new/don't know what portforwarding is [this](https://www.youtube.com/watch?v=CLunOJZqmc0) video may be helpful.
+Then port forward your server and get a domain. If you are new/don't know what port forwarding is [this](https://www.youtube.com/watch?v=CLunOJZqmc0) video may be helpful.
 
 Getting a domain can be done via services like [Google Domains](https://domains.google/). Or if you don't have money like me, use something like [No-IP](https://www.noip.com/).
 
