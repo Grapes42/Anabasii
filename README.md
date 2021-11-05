@@ -41,7 +41,7 @@ Setup instructions for Raspbian or other Debian distros (I'm planning on support
 [Setup and SSH](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html) into your server, and run:
 ```
 sudo su -
-apt install git && git clone https://github.com/Grapes42/Anabasii.git ~/
+apt install git && git clone https://github.com/Grapes42/Anabasii.git ~/Anabasii
 ~/Anabasii/anabasii-setup.sh
 ```
 or
