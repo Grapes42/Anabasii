@@ -1,4 +1,5 @@
-cd uploads &&
+#!/bin/bash
+cd /var/www/html/uploads &&
   find . -type f \( ! -iname ".*" \) -printf '%T@ %b :%p\0' |
     sort -zrn |
     gawk -v RS='\0' -v ORS='\0' '
