@@ -42,7 +42,7 @@ Setup instructions for Raspbian or other Debian distros (I'm planning on support
 ```
 sudo su -
 apt install git && git clone https://github.com/Grapes42/Anabasii.git ~/Anabasii
-~/Anabasii/anabasii-setup.sh
+~/Anabasii/setupScripts/anabasii-setup.sh
 ```
 or
 ```
@@ -52,9 +52,9 @@ $ apt install git apache2
 $ apt install php7.3 php7.3-fpm && a2enmod proxy_fcgi setenvif
 $ rm -rf /var/www/html/* && git clone https://github.com/Grapes42/Anabasii.git /var/www/html
 $ chmod -R 777 /var/www/html/uploads
-$ cp /var/www/html/setupFiles/000-default.conf /etc/apache2/sites-available/000-default.conf
-$ cp /var/www/html/setupFiles/php.ini /etc/php/7.3/fpm/php.ini
-$ cp /var/www/html/setupFiles/anabasii-clean.service /etc/systemd/system/anabasii-clean.service
+$ cp /var/www/html/configFiles/000-default.conf /etc/apache2/sites-available/000-default.conf
+$ cp /var/www/html/configFiles/php.ini /etc/php/7.3/fpm/php.ini
+$ cp /var/www/html/configFiles/anabasii-clean.service /etc/systemd/system/anabasii-clean.service
 $ systemctl daemon-reload && systemctl enable anabasii-clean.service
 $ reboot
 ```
