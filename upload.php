@@ -54,14 +54,11 @@
 						$fileError = $_FILES['file']['error'];
 						$fileType = $_FILES['file']['type'];
 
-						$fileExt = explode('.', $fileName);
-						$fileActualExt = strtolower(end($fileExt));
-
 						if($fileError === 0)
 						{
 							if($fileSize < 1000*1000*1000) // 1GB
 							{
-								$fileNameNew = uniqid('', true).".".$fileActualExt;
+								$fileNameNew = uniqid('', true).".".$fileName;
 								$fileDestination = 'uploads/'.$fileNameNew;
 								move_uploaded_file($fileTmpName, $fileDestination);
 								echo "http://anabasii.ddns.net/".$fileDestination;
