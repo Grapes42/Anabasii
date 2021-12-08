@@ -12,7 +12,7 @@ else
 	mv ~/Anabasii /var/www/html
 	chmod -R 777 /var/www/html/uploads
 	cp /var/www/html/configFiles/000-default.conf /etc/apache2/sites-available/000-default.conf
-	cp /var/www/html/configFiles/php.ini /etc/php/7.3/fpm/php.ini
+	cp /var/www/html/configFiles/php.ini /etc/php/7.4/fpm/php.ini
 	cp /var/www/html/configFiles/anabasii-clean.service /etc/systemd/system/anabasii-clean.service
 	systemctl daemon-reload
 	systemctl enable anabasii-clean.service
