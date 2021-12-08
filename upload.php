@@ -54,23 +54,32 @@
 						$fileError = $_FILES['file']['error'];
 						$fileType = $_FILES['file']['type'];
 
-						if($fileError === 0)
+						if (strpos($fileName, '.php') == false) 
 						{
-							if($fileSize < 1000*1000*1000) // 1GB
+
+							if($fileError === 0)
 							{
-								$fileNameNew = uniqid('', true).".".$fileName;
-								$fileDestination = 'uploads/'.$fileNameNew;
-								move_uploaded_file($fileTmpName, $fileDestination);
-								echo "http://anabasii.ddns.net/".$fileDestination;
+								if($fileSize < 1000*1000*1000) // 1GB
+								{
+									$fileNameNew = uniqid('', true).".".$fileName;
+									$fileDestination = 'uploads/'.$fileNameNew;
+									move_uploaded_file($fileTmpName, $fileDestination);
+									echo "http://anabasii.ddns.net/".$fileDestination;
+								}
+								else
+								{
+									echo "Your file is too large";
+								}
 							}
 							else
 							{
-								echo "Your file is too large";
+							    echo "There was an error uploading your file";
 							}
 						}
+
 						else
 						{
-						    echo "There was an error uploading your file";
+							echo "PHP Scripts aren't allowed to be uploaded";
 						}
 
 					}
