@@ -6,7 +6,7 @@ then
 	exit
 else
 	apt update && apt upgrade
-	apt install apache2 php7.3 php7.3-fpm
+	apt install gawk apache2 php7.3 php7.3-fpm
 	a2enmod proxy_fcgi setenvif
 	rm -rf /var/www/html
 	mv ~/Anabasii /var/www/html

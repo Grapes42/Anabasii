@@ -48,7 +48,7 @@ or
 ```
 $ sudo su -
 $ apt update && apt upgrade
-$ apt install git apache2
+$ apt install git apache2 gawk
 $ apt install php7.3 php7.3-fpm && a2enmod proxy_fcgi setenvif
 $ rm -rf /var/www/html/* && git clone https://github.com/Grapes42/Anabasii.git /var/www/html
 $ chmod -R 777 /var/www/html/uploads
