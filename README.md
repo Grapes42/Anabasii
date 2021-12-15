@@ -1,4 +1,4 @@
-# Anabassi
+# Anabasii
 ### Simple large file sharer
 [![CodeFactor](https://www.codefactor.io/repository/github/grapes42/anabasii/badge)](https://www.codefactor.io/repository/github/grapes42/anabasii)
 
@@ -40,9 +40,9 @@ Setup instructions for Raspbian or other Debian distros (I'm planning on support
 
 [Setup and SSH](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html) into your server, and run:
 ```
-sudo su -
-apt install git && git clone https://github.com/Grapes42/Anabasii.git ~/Anabasii
-~/Anabasii/setupScripts/anabasii-setup.sh
+$ sudo su -
+$ apt install git && git clone https://github.com/Grapes42/Anabasii.git ~/Anabasii
+$ ~/Anabasii/setupScripts/anabasii-setup.sh
 ```
 or
 ```
